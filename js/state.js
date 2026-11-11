@@ -1,0 +1,1 @@
+export const state = { todos: [], currentFilter: "all", editingId: null };

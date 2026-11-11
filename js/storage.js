@@ -1,0 +1,3 @@
+const KEY = "week7-todos-v1";
+export function loadTodos(storage = globalThis.localStorage) { try { const data = JSON.parse(storage?.getItem(KEY) ?? "[]"); return Array.isArray(data) ? data.filter(t => t && Number.isInteger(t.id) && typeof t.text === "string" && typeof t.completed === "boolean") : []; } catch { return []; } }
+export function saveTodos(todos, storage = globalThis.localStorage) { try { storage?.setItem(KEY, JSON.stringify(todos)); return true; } catch { return false; } }

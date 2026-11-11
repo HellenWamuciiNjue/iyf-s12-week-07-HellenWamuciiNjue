@@ -1,0 +1,1 @@
+{"name":"iyf-s12-week-07-hellenwamuciinjue","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test","lint":"eslint ."},"devDependencies":{"eslint":"^9.39.0"},"engines":{"node":">=22"}}
