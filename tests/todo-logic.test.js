@@ -8,6 +8,7 @@ import {
   deleteTodo,
   editTodo,
   filterTodos,
+  getNextTodoId,
   toggleTodo,
 } from "../js/todo-logic.js";
 
@@ -20,6 +21,35 @@ const todos = [
 test("createTodo trims and rejects blank input", () => {
   assert.deepEqual(createTodo(" Read ", 4), { id: 4, text: "Read", completed: false });
   assert.equal(createTodo(" ", 5), null);
+});
+test("getNextTodoId starts at one and advances beyond the highest positive safe integer ID", () => {
+  assert.equal(getNextTodoId(), 1);
+  assert.equal(getNextTodoId([]), 1);
+  assert.equal(getNextTodoId([{ id: 2 }, { id: 8 }, { id: "99" }]), 9);
+});
+
+test("getNextTodoId ignores invalid, non-positive, and null task entries", () => {
+  assert.equal(
+    getNextTodoId([
+      null,
+      undefined,
+      {},
+      { id: 0 },
+      { id: -4 },
+      { id: "99" },
+      { id: 3.5 },
+      { id: 6 },
+    ]),
+    7,
+  );
+  assert.equal(getNextTodoId(null), 1);
+});
+
+test("getNextTodoId rejects IDs beyond the safe integer range", () => {
+  assert.throws(
+    () => getNextTodoId([{ id: Number.MAX_SAFE_INTEGER }]),
+    RangeError,
+  );
 });
 test("filters return expected tasks", () => {
   assert.equal(filterTodos(todos).length, 3);

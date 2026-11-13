@@ -3,13 +3,14 @@ import {
   createTodo,
   deleteTodo,
   editTodo,
+  getNextTodoId,
   toggleTodo,
 } from "./todo-logic.js";
 import { saveFilter, saveTodos } from "./storage.js";
 import { render } from "./todo-dom.js";
 
 export function bindEvents(el, state) {
-  let nextId = state.todos.reduce((maximum, todo) => Math.max(maximum, todo.id), 0) + 1;
+  let nextId = getNextTodoId(state.todos);
 
   const update = () => {
     saveTodos(state.todos);
