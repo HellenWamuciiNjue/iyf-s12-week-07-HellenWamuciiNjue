@@ -3,6 +3,16 @@ export function createTodo(text, id) {
   return clean ? { id, text: clean, completed: false } : null;
 }
 
+// Keep ID generation in the pure-logic module so restored tasks cannot collide.
+export function getNextTodoId(todos) {
+  const highestId = todos.reduce(
+    (maximum, todo) =>
+      Number.isSafeInteger(todo.id) ? Math.max(maximum, todo.id) : maximum,
+    0,
+  );
+  return highestId + 1;
+}
+
 export function filterTodos(todos, filter = "all") {
   if (filter === "active") return todos.filter((todo) => !todo.completed);
   if (filter === "completed") return todos.filter((todo) => todo.completed);
