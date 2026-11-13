@@ -5,7 +5,7 @@ This repository extends the Week 5 To-Do List and demonstrates browser storage, 
 ## Live Demo
 
 Expected GitHub Pages URL (publish from Settings → Pages → Deploy from a branch → main → /root):
-https://hellenwamuciinjue.github.io/iyf-s12-week-07-HellenWamuciiNjue/
+https://hellenwamuciiNjue.github.io/iyf-s12-week-07-HellenWamuciiNjue/
 
 ## Start here
 - **Main To-Do List:** [Open the application](index.html)
@@ -33,7 +33,7 @@ https://hellenwamuciinjue.github.io/iyf-s12-week-07-HellenWamuciiNjue/
 - Prettier is configured for consistent formatting.
 
 ## Daily challenges
-See daily-challenges/README.md for all five challenges and the Day 5 code-review checklist.
+See daily-challenges/README.md for all five challenges. Day 5 is a code-review exercise for the **Week 6 Weather Dashboard**; it is not a Week 5 or Week 7 application and is not duplicated in this repository.
 
 ## Setup and checks
 Requires Node.js 22+ and npm.
@@ -52,6 +52,9 @@ The original Week 5 source files have been preserved unchanged in week5-original
 
 Original Week 5 repository:
 https://github.com/HellenWamuciiNjue/iyf-s12-week-05-HellenWamuciiNjue
+
+## Week 6 reference
+The Weather Dashboard belongs to Week 6 and should remain in its Week 6 repository. Week 7 Day 5 only asks you to review that existing project using the checklist; it does not move, copy or recreate the dashboard here.
 
 ## Collaboration
 - Assigned partner: To be completed after confirming the Classroom assignment.
