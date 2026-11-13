@@ -4,8 +4,8 @@ This repository extends the Week 5 To-Do List and demonstrates browser storage, 
 
 ## Live Demo
 
-Expected GitHub Pages URL (publish from Settings → Pages → Deploy from a branch → main → /root):
-https://hellenwamuciiNjue.github.io/iyf-s12-week-07-HellenWamuciiNjue/
+Live GitHub Pages demo:
+https://hellenwamuciinjue.github.io/iyf-s12-week-07-HellenWamuciiNjue/
 
 ## Start here
 - **Main To-Do List:** [Open the application](index.html)
