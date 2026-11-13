@@ -8,6 +8,7 @@ import {
   deleteTodo,
   editTodo,
   filterTodos,
+  getNextTodoId,
   toggleTodo,
 } from "../js/todo-logic.js";
 
@@ -20,6 +21,10 @@ const todos = [
 test("createTodo trims and rejects blank input", () => {
   assert.deepEqual(createTodo(" Read ", 4), { id: 4, text: "Read", completed: false });
   assert.equal(createTodo(" ", 5), null);
+});
+test("getNextTodoId starts at one and advances beyond the highest safe numeric id", () => {
+  assert.equal(getNextTodoId([]), 1);
+  assert.equal(getNextTodoId([{ id: 2 }, { id: 8 }, { id: "99" }]), 9);
 });
 test("filters return expected tasks", () => {
   assert.equal(filterTodos(todos).length, 3);
