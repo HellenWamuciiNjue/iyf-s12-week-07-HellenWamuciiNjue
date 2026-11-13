@@ -18,6 +18,7 @@ https://hellenwamuciinjue.github.io/iyf-s12-week-07-HellenWamuciiNjue/
 - Clear completed tasks and see the active-task count.
 - Persist tasks and selected filter in localStorage.
 - Render user text safely with textContent.
+- Load a Week 7 submission checklist on first visit, with completed, in-progress, waiting-for-partner and to-do labels.
 
 ## Lesson 13 practice
 - Notes App persists notes using JSON and localStorage.
