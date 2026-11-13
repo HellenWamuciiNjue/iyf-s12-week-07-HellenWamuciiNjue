@@ -1,0 +1,14 @@
+# Node modules if any are ever installed locally
+node_modules/
+
+# Local Operating System tracking caches
+.DS_Store
+Thumbs.db
+
+# Live Server / IDE settings directories
+.vscode/
+.idea/
+
+# Local build logs and system diagnostics outputs
+*.log
+npm-debug.log*
