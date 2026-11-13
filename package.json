@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "lint": "eslint .",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "lint": "eslint js tests eslint.config.js",
+    "format": "prettier --write index.html labs.html styles.css js tests daily-challenges",
+    "format:check": "prettier --check index.html labs.html styles.css js tests daily-challenges"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.0",
