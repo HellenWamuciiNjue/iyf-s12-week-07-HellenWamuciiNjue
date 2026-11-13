@@ -4,12 +4,19 @@ export function createTodo(text, id) {
 }
 
 // Keep ID generation in the pure-logic module so restored tasks cannot collide.
-export function getNextTodoId(todos) {
-  const highestId = todos.reduce(
-    (maximum, todo) =>
-      Number.isSafeInteger(todo.id) ? Math.max(maximum, todo.id) : maximum,
-    0,
-  );
+export function getNextTodoId(todos = []) {
+  const validTodos = Array.isArray(todos) ? todos : [];
+  const highestId = validTodos.reduce((maximum, todo) => {
+    const id = todo?.id;
+    return Number.isSafeInteger(id) && id > 0
+      ? Math.max(maximum, id)
+      : maximum;
+  }, 0);
+
+  if (highestId === Number.MAX_SAFE_INTEGER) {
+    throw new RangeError("No safe integer IDs remain");
+  }
+
   return highestId + 1;
 }
 
