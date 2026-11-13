@@ -1,51 +1,54 @@
-# Week 7 — JavaScript Best Practices: To-Do List Refactor
+# Week 7 — JavaScript Best Practices
 
-A modular refactor of the Week 5 interactive To-Do List. The original user-facing features are retained while application state, storage, business logic, DOM rendering, and event handling are separated into ES modules.
+This repository extends the Week 5 To-Do List and demonstrates browser storage, modular JavaScript, centralized state, testing and code quality.
 
-## Features
-- Add, complete, delete, and edit tasks
-- All, Active, and Completed filters
-- Clear completed tasks and live remaining-task count
-- Persistent tasks using localStorage
-- Safe text rendering with textContent
-- Modular JavaScript and automated unit tests
-- ESLint 9 flat configuration
+## Start here
+- **Main To-Do List:** [Open the application](index.html)
+- **Practice Labs:** [Notes, Session Storage contact form, Shopping Cart and Observer Pattern](labs.html)
+- **Daily Challenges:** [Open the challenge index](daily-challenges/README.md)
 
-## Requirements
-- Node.js 22 or 24
-- npm
+## Main To-Do List
+- Add, complete, edit and delete tasks.
+- Filter All, Active and Completed tasks.
+- Clear completed tasks and see the active-task count.
+- Persist tasks in localStorage.
+- Render user text safely with textContent.
 
-## Run locally
-1. Clone this repository.
-2. Run `npm install`.
-3. Run `npm test` to execute the automated tests.
-4. Run `npm run lint` to check code quality.
-5. Open `index.html` with VS Code Live Server (or another local static server).
+## Lesson 13 practice
+- Notes App persists notes using JSON and localStorage.
+- Contact form restores a sessionStorage draft and clears it after successful demo submission.
+- Shopping Cart supports adding products, quantity changes, removal, totals, item count, clear cart and persistence.
+- Observable store demonstrates centralized state, subscriptions and unsubscribe.
 
-## Project structure
-```
-index.html
-styles.css
-js/
-  app.js
-  state.js
-  storage.js
-  todo-logic.js
-  todo-dom.js
-  todo-events.js
-tests/
-  todo-logic.test.js
-daily-challenges/
-  day-1.md ... day-5.md
-eslint.config.js
-package.json
-```
-
-## Week 5 continuity
-This project is based on the Week 5 To-Do List and preserves its core interactions, including event delegation, filters, inline editing, and task counts. The Week 5 DOM practice exercise remains separate from the application refactor.
+## Lesson 14 practice
+- ES modules separate app setup, state, storage, DOM rendering, events and pure task logic.
+- Pure functions are tested with Node's built-in test runner.
+- ESLint 9 uses flat configuration in eslint.config.js.
+- Prettier is configured for consistent formatting.
 
 ## Daily challenges
-See the `daily-challenges/` folder for the five daily challenge files.
+See daily-challenges/README.md for all five runnable challenges and the Day 5 code-review checklist.
+
+## Setup and checks
+Requires Node.js 22+ and npm.
+
+```bash
+npm install
+npm test
+npm run lint
+npm run format:check
+```
+
+Open index.html and labs.html with VS Code Live Server or another local static server. GitHub Pages can be enabled in repository Settings → Pages, selecting the main branch and root folder.
+
+## Week 5 continuity
+The modular To-Do List retains the Week 5 task workflow and interaction patterns. The original Week 5 source repository is available at:
+https://github.com/HellenWamuciiNjue/iyf-s12-week-05-HellenWamuciiNjue
+
+## Collaboration
+- Assigned partner: To be completed after confirming the Classroom assignment.
+- Partner's pull request: To be added after it is received.
+- My review of partner's repository: To be added after completing the assigned review.
 
 ## Author
 Hellen Wamucii Njue
