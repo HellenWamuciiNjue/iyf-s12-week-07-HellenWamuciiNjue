@@ -60,7 +60,7 @@ The Weather Dashboard belongs to Week 6 and should remain in its Week 6 reposito
 - Assigned partner: [@Stephen-Dev254](https://github.com/Stephen-Dev254)
 - Partner's pull request: https://github.com/Stephen-Dev254/iyf-s12-week-07-Stephen-Dev254/pull/1
 - My pull request: https://github.com/HellenWamuciiNjue/iyf-s12-week-07-HellenWamuciiNjue/pull/1
-- Review feedback: Review notes prepared; posting the required inline comments is pending GitHub access to the partner repository.
+- Review feedback: Submitted three inline code comments (a suggested improvement, a design question and positive feedback) plus a general review on the partner's pull request.
 
 ## Author
 Hellen Wamucii Njue
