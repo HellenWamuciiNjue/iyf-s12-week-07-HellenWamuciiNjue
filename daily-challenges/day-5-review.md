@@ -1,6 +1,8 @@
-# Day 5 — Weather Dashboard Code Review
+# Day 5 — Week 6 Weather Dashboard Code Review
 
-Review the Week 5 Weather Dashboard before suggesting changes.
+This Week 7 challenge is to review the **Weather Dashboard you built in Week 6**. The dashboard remains a Week 6 project in its original Week 6 repository. Do not describe it as a Week 5 project, and do not recreate or move the application into this Week 7 repository.
+
+Use the checklist below against the actual Week 6 source code. Record only findings you have verified.
 
 ## Test cases
 - [ ] Empty search: show a helpful validation message.
@@ -12,7 +14,7 @@ Review the Week 5 Weather Dashboard before suggesting changes.
 - [ ] Mobile layout: controls and results fit narrow screens.
 
 ## Code organization
-- [ ] Separate API requests, DOM rendering and event handling.
+- [ ] Separate API requests, DOM rendering and event handling where appropriate.
 - [ ] Use descriptive function and variable names.
 - [ ] Avoid duplicated rendering or validation code.
 - [ ] Keep API keys out of committed source code.
@@ -24,7 +26,7 @@ Review the Week 5 Weather Dashboard before suggesting changes.
 2. Validate the search field before requesting data.
 3. Handle HTTP errors and network failures.
 4. Keep API and UI responsibilities separate.
-5. Add tests for formatting and validation helpers.
+5. Add tests for formatting and validation helpers where appropriate.
 
 ## Review summary
-Record the actual files inspected, issues reproduced, and improvements proposed. Do not claim an issue exists unless you have verified it.
+Record the actual Week 6 files inspected, any issues you reproduced, and the improvements you proposed. Do not claim an issue exists unless you have verified it. Keep this review activity in Week 7; keep the Weather Dashboard application itself in Week 6.
