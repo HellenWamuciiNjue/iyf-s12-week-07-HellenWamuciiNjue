@@ -57,9 +57,10 @@ https://github.com/HellenWamuciiNjue/iyf-s12-week-05-HellenWamuciiNjue
 The Weather Dashboard belongs to Week 6 and should remain in its Week 6 repository. Week 7 Day 5 only asks you to review that existing project using the checklist; it does not move, copy or recreate the dashboard here.
 
 ## Collaboration
-- Assigned partner: To be completed after confirming the Classroom assignment.
-- Partner's pull request: To be added after it is received.
-- My review of partner's repository: To be added after completing the assigned review.
+- Assigned partner: [@Stephen-Dev254](https://github.com/Stephen-Dev254)
+- Partner's pull request: https://github.com/Stephen-Dev254/iyf-s12-week-07-Stephen-Dev254/pull/1
+- My pull request: https://github.com/HellenWamuciiNjue/iyf-s12-week-07-HellenWamuciiNjue/pull/1
+- Review feedback: Review notes prepared; posting the required inline comments is pending GitHub access to the partner repository.
 
 ## Author
 Hellen Wamucii Njue
