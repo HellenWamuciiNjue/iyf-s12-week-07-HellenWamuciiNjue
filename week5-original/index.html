@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Using 'defer' ensures app.js executes only after all DOM tags load completely -->
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+        
+        <!-- Step 2: Add a task interface section -->
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="New task">
+            <button type="submit">Add</button>
+        </form>
+        
+        <!-- Error field for empty text validation warnings -->
+        <div id="form-error" class="form-error"></div>
+
+        <!-- Step 4: Filtering UI button navigation row -->
+        <div class="filters">
+            <button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter" data-filter="active" aria-pressed="false">Active</button>
+            <button type="button" class="filter" data-filter="completed" aria-pressed="false">Completed</button>
+        </div>
+        
+        <!-- Step 1 & 3: Dynamic tasks target checklist zone -->
+        <ul id="todo-list"></ul>
+        
+        <!-- Bottom metrics summary drawer bar -->
+        <div class="stats">
+            <span id="items-left">0 items left</span>
+            <button type="button" id="clear-completed">Clear Completed</button>
+        </div>
+
+        <p class="hint">Click a task to complete it &middot; double-click to edit &middot; Enter saves, Escape cancels</p>
+    </div>
+</body>
+</html>
