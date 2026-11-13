@@ -2,6 +2,11 @@
 
 This repository extends the Week 5 To-Do List and demonstrates browser storage, modular JavaScript, centralized state, testing and code quality.
 
+## Live Demo
+
+Expected GitHub Pages URL (publish from Settings → Pages → Deploy from a branch → main → /root):
+https://hellenwamuciinjue.github.io/iyf-s12-week-07-HellenWamuciiNjue/
+
 ## Start here
 - **Main To-Do List:** [Open the application](index.html)
 - **Practice Labs:** [Notes, Session Storage contact form, Shopping Cart and Observer Pattern](labs.html)
